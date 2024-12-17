@@ -120,7 +120,7 @@ $category = DB::table('categories')->get();
                                 </form>
                             </div>
                             <ul class="page_menu_nav">
-                                <li class="page_menu_item has-children">
+                                <!-- <li class="page_menu_item has-children">
                                     <a href="#">Language<i class="fa fa-angle-down"></i></a>
                                     <ul class="page_menu_selection">
                                         <li><a href="#">English<i class="fa fa-angle-down"></i></a></li>
@@ -128,7 +128,7 @@ $category = DB::table('categories')->get();
                                         <li><a href="#">Spanish<i class="fa fa-angle-down"></i></a></li>
                                         <li><a href="#">Japanese<i class="fa fa-angle-down"></i></a></li>
                                     </ul>
-                                </li>
+                                </li> -->
                                 <li class="page_menu_item has-children">
                                     <a href="#">Currency<i class="fa fa-angle-down"></i></a>
                                     <ul class="page_menu_selection">
@@ -139,7 +139,7 @@ $category = DB::table('categories')->get();
                                     </ul>
                                 </li>
                                 <li class="page_menu_item">
-                                    <a href="#">Home<i class="fa fa-angle-down"></i></a>
+                                    <a href="{{url('/')}}">Home<i class="fa fa-angle-down"></i></a>
                                 </li>
                                 <li class="page_menu_item has-children">
                                     <a href="#">Super Deals<i class="fa fa-angle-down"></i></a>
@@ -182,8 +182,8 @@ $category = DB::table('categories')->get();
                             </ul>
 
                             <div class="menu_contact">
-                                <div class="menu_contact_item"><div class="menu_contact_icon"><img src="{{ asset('public/frontend/images/phone_white.png')}}" alt=""></div>+38 068 005 3570</div>
-                                <div class="menu_contact_item"><div class="menu_contact_icon"><img src="{{ asset('public/frontend/images/mail_white.png')}}" alt=""></div><a href="mailto:fastsales@gmail.com">fastsales@gmail.com</a></div>
+                                <div class="menu_contact_item"><div class="menu_contact_icon"><img src="{{ asset('public/frontend/images/phone_white.png')}}" alt=""></div>+959400002913</div>
+                                <div class="menu_contact_item"><div class="menu_contact_icon"><img src="{{ asset('public/frontend/images/mail_white.png')}}" alt=""></div><a href="mailto:admin@one4one.com">admin@one4one.com</a></div>
                             </div>
                         </div>
                     </div>

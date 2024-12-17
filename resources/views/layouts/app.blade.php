@@ -5,7 +5,7 @@ $setting = DB::table('sitesetting')->first();
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <title>Ecommerce</title>
+      <title>One4One</title>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="description" content="OneTech shop project">
@@ -37,7 +37,7 @@ $setting = DB::table('sitesetting')->first();
                      </div>
                      <div class="top_bar_contact_item">
                         <div class="top_bar_icon"><img src="{{ asset('public/frontend/images/mail.png')}}" alt=""></div>
-                        <a href="mailto:fastsales@gmail.com">{{ $setting->email }}</a>
+                        <a href="mailto:{{ $setting->email }}">{{ $setting->email }}</a>
                      </div>
                      <div class="top_bar_content ml-auto">
                         @guest
@@ -50,25 +50,7 @@ $setting = DB::table('sitesetting')->first();
                            </ul>
                         </div>
                         @endguest
-                        <div class="top_bar_menu">
-                           <ul class="standard_dropdown top_bar_dropdown">
-                              @php
-                              $language = Session()->get('lang');
-                              @endphp
-                              <li>
-                                 @if(Session()->get('lang') == 'bangla')
-                                 <a href="{{route('language.english')}}">English<i class="fas fa-chevron-down"></i></a>
-                                 @else
-                                 <a href="{{route('language.bangla')}}">Bangla<i class="fas fa-chevron-down"></i></a>
-                                 @endif
-                                 <!-- <ul>
-                                    <li><a href="#">Italian</a></li>
-                                    <li><a href="#">Spanish</a></li>
-                                    <li><a href="#">Japanese</a></li>
-                                    </ul> -->
-                              </li>
-                           </ul>
-                        </div>
+                        
                         <div class="top_bar_user">
                            @guest
                            <div>
@@ -111,7 +93,7 @@ $setting = DB::table('sitesetting')->first();
                   <!-- Logo -->
                   <div class="col-lg-2 col-sm-3 col-3 order-1">
                      <div class="logo_container">
-                        <div class="logo"><a href="{{url('/')}}"><img src="{{ asset('public/frontend/images/logo.png')}}" alt=""></a></div>
+                        <div class="logo"><a href="{{url('/')}}"><img src="{{ asset('public/frontend/images/one4one/one4one-logo-120px.png')}}" alt=""></a></div>
                      </div>
                   </div>
                   <!-- Search -->
@@ -259,7 +241,7 @@ $setting = DB::table('sitesetting')->first();
                      <div class="copyright_container d-flex flex-sm-row flex-column align-items-center justify-content-start">
                         <div class="copyright_content">
                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                           Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="fa fa-heart" aria-hidden="true"></i> by Asif<a href="#" target="_blank"></a>
+                           Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | One4One<a href="#" target="_blank"></a>
                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </div>
                         <div class="logos ml-sm-auto">

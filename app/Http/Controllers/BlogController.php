@@ -32,8 +32,6 @@ public function bangla()
     Session()->forget('lang');
     Session::put('lang','bangla');
     return redirect()->back();
-
-
 }
 
 public function blogSingle($id)
