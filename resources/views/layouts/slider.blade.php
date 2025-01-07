@@ -28,13 +28,13 @@
                     <div class="banner_price">
                         @if($slider && $slider->discount_price === null)
                             <h2>
-                                {{ $slider && $slider->selling_price ? 'TK' . $slider->selling_price : 'Price Unavailable' }}
+                                {{ $slider && $slider->selling_price ? '$' . $slider->selling_price : 'Price Unavailable' }}
                             </h2>
                         @else
                             @if($slider && $slider->selling_price)
-                                <span>TK{{ $slider->selling_price }}</span>
+                                <span>${{ $slider->selling_price }}</span>
                             @endif
-                            {{ $slider && $slider->discount_price ? 'TK' . $slider->discount_price : 'Discount Price Unavailable' }}
+                            {{ $slider && $slider->discount_price ? '$' . $slider->discount_price : 'Discount Price Unavailable' }}
                         @endif
                     </div>
                     <div class="banner_product_name">

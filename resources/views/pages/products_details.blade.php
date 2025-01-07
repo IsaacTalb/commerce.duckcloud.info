@@ -67,9 +67,9 @@
                         </div>
                      </div>
                      @if($product->discount_price == NULL)
-                     <div class="product_price discount">TK{{$product->selling_price}}<span></span></div>
+                     <div class="product_price discount">${{$product->selling_price}}<span></span></div>
                      @else
-                     <div class="product_price discount">TK{{$product->discount_price}}<span>TK{{$product->selling_price}}</span></div>
+                     <div class="product_price discount">${{$product->discount_price}}<span>${{$product->selling_price}}</span></div>
                      @endif
                      <div class="button_container">
                         <button type="submit" class="button cart_button">Add to Cart</button>

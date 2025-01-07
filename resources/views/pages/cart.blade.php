@@ -63,11 +63,11 @@
 
 				<div class="cart_item_price cart_info_col">
 					<div class="cart_item_title">Price</div>
-					<div class="cart_item_text">{{ $row->price }}Tk</div>
+					<div class="cart_item_text">{{ $row->price }}$</div>
 				</div>
 				<div class="cart_item_total cart_info_col">
 					<div class="cart_item_title">Total</div>
-					<div class="cart_item_text">{{ $row->price*$row->qty }}Tk</div>
+					<div class="cart_item_text">{{ $row->price*$row->qty }}$</div>
 				</div>
 
                 <div class="cart_item_total cart_info_col">
@@ -87,8 +87,8 @@
 						<div class="order_total">
 							<div class="order_total_content text-md-right">
 								<div class="order_total_title">Order Total:</div>
-								<!-- <div class="order_total_amount">TK{{ Cart::total() }}</div> -->
-								<div class="order_total_amount">{{ str_replace( ',', '', Cart::total() ) }}Tk</div>
+								<!-- <div class="order_total_amount">${{ Cart::total() }}</div> -->
+								<div class="order_total_amount">{{ str_replace( ',', '', Cart::total() ) }}$</div>
 
 
 							</div>

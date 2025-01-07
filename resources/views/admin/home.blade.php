@@ -41,7 +41,7 @@ $user = DB::table('users')->get();
               </div><!-- card-header -->
               <div class="d-flex align-items-center justify-content-between">
                 <span class="sparkline2">5,3,9,6,5,9,7,3,5,2</span>
-                <h3 class="mg-b-0 tx-white tx-lato tx-bold">{{$today}} Tk</h3>
+                <h3 class="mg-b-0 tx-white tx-lato tx-bold">{{$today}} $</h3>
               </div><!-- card-body -->
 
             </div><!-- card -->
@@ -54,7 +54,7 @@ $user = DB::table('users')->get();
               </div><!-- card-header -->
               <div class="d-flex align-items-center justify-content-between">
                 <span class="sparkline2">5,3,9,6,5,9,7,3,5,2</span>
-                <h3 class="mg-b-0 tx-white tx-lato tx-bold">{{$month}} Tk</h3>
+                <h3 class="mg-b-0 tx-white tx-lato tx-bold">{{$month}} $</h3>
               </div><!-- card-body -->
 
             </div><!-- card -->
@@ -67,7 +67,7 @@ $user = DB::table('users')->get();
               </div><!-- card-header -->
               <div class="d-flex align-items-center justify-content-between">
                 <span class="sparkline2">5,3,9,6,5,9,7,3,5,2</span>
-                <h3 class="mg-b-0 tx-white tx-lato tx-bold">{{$year}} Tk</h3>
+                <h3 class="mg-b-0 tx-white tx-lato tx-bold">{{$year}} $</h3>
               </div><!-- card-body -->
 
             </div><!-- card -->
@@ -80,7 +80,7 @@ $user = DB::table('users')->get();
               </div><!-- card-header -->
               <div class="d-flex align-items-center justify-content-between">
                 <span class="sparkline2">5,3,9,6,5,9,7,3,5,2</span>
-                <h3 class="mg-b-0 tx-white tx-lato tx-bold">{{$delivery}} Tk</h3>
+                <h3 class="mg-b-0 tx-white tx-lato tx-bold">{{$delivery}} $</h3>
               </div><!-- card-body -->
 
             </div><!-- card -->
@@ -98,7 +98,7 @@ $user = DB::table('users')->get();
                 </div><!-- card-header -->
                 <div class="d-flex align-items-center justify-content-between">
                   <span class="sparkline2">5,3,9,6,5,9,7,3,5,2</span>
-                  <h3 class="mg-b-0 tx-white tx-lato tx-bold">{{$return}} Tk</h3>
+                  <h3 class="mg-b-0 tx-white tx-lato tx-bold">{{$return}} $</h3>
                 </div><!-- card-body -->
 
               </div><!-- card -->

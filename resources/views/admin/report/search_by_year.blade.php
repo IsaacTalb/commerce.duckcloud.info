@@ -14,7 +14,7 @@
         </div><!-- sl-page-title -->
 
         <div class="card pd-20 pd-sm-40">
-          <h6 class="card-body-title"><span class="badge badge-success"><h5>Total Amount This Year = {{$total}} Tk</h5></span></h6>
+          <h6 class="card-body-title"><span class="badge badge-success"><h5>Total Amount This Year = {{$total}} $</h5></span></h6>
 
 
 
@@ -40,9 +40,9 @@
                 <tr>
                 <td>{{ $row->payment_type }}</td>
                   <td>{{ $row->blnc_transection }}</td>
-                  <td>{{ $row->subtotal }} Tk</td>
-                  <td>{{ $row->shipping }} Tk</td>
-                  <td>{{ $row->total }} Tk</td>
+                  <td>{{ $row->subtotal }} $</td>
+                  <td>{{ $row->shipping }} $</td>
+                  <td>{{ $row->total }} $</td>
                   <td>{{ $row->date }}  </td>
 
                   <td>

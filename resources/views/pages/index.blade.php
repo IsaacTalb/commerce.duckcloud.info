@@ -78,17 +78,17 @@ $hot = DB::table('products')
                               <div class="deals_item_category"><a href="#">{{$ht->brand_name}}</a></div>
                               @if($ht->discount_price == NULL)
                               @else
-                              <div class="deals_item_price_a ml-auto">TK{{$ht->selling_price}}</div>
+                              <div class="deals_item_price_a ml-auto">${{$ht->selling_price}}</div>
                               @endif
                            </div>
                            <div class="deals_info_line d-flex flex-row justify-content-start">
                               <div class="deals_item_name">{{$ht->product_name}}</div>
                               @if($ht->discount_price == NULL)
-                              <div class="deals_item_price ml-auto">TK{{$ht->selling_price}}</div>
+                              <div class="deals_item_price ml-auto">${{$ht->selling_price}}</div>
                               @else
                               @endif
                               @if($ht->discount_price !== NULL)
-                              <div class="deals_item_price ml-auto">TK{{$ht->discount_price}}</div>
+                              <div class="deals_item_price ml-auto">${{$ht->discount_price}}</div>
                               @else
                               @endif
                            </div>
@@ -260,7 +260,7 @@ $mid = DB::table('products')
                            <div class="banner_2_title">
                               <h4>{{$row->brand_name}}</h4>
                               <br>
-                              <h2>TK{{$row->selling_price}}</h2>
+                              <h2>${{$row->selling_price}}</h2>
                            </div>
                            <!-- <div class="rating_r rating_r_4 banner_2_rating"><i><i><i><i><i><i><i><i><i><i></div>
                               <div class="button banner_2_button"><a href="#">Explore</a></div>
@@ -311,9 +311,9 @@ $product = DB::table('products')->where('category_id',$catid)->where('status',1)
                                  <div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="{{asset($row->image_one)}}" alt="" style="height: 120px; width: 100px;"></div>
                                  <div class="product_content">
                                     @if($row->discount_price == NULL)
-                                    <div class="product_price discount">TK{{$row->selling_price}}<span></span></div>
+                                    <div class="product_price discount">${{$row->selling_price}}<span></span></div>
                                     @else
-                                    <div class="product_price discount">TK{{$row->discount_price}}<span>TK{{$row->selling_price}}</span></div>
+                                    <div class="product_price discount">${{$row->discount_price}}<span>${{$row->selling_price}}</span></div>
                                     @endif
                                     <div class="product_name">
                                        <div><a href="product.html">{{$row->product_name}}</a></div>
@@ -387,9 +387,9 @@ $product = DB::table('products')->where('category_id',$catid)->where('status',1)
                                  <div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="{{asset($row->image_one)}}" alt="" style="height: 120px; width: 100px;"></div>
                                  <div class="product_content">
                                     @if($row->discount_price == NULL)
-                                    <div class="product_price discount">TK{{$row->selling_price}}<span></span></div>
+                                    <div class="product_price discount">${{$row->selling_price}}<span></span></div>
                                     @else
-                                    <div class="product_price discount">TK{{$row->discount_price}}<span>TK{{$row->selling_price}}</span></div>
+                                    <div class="product_price discount">${{$row->discount_price}}<span>${{$row->selling_price}}</span></div>
                                     @endif
                                     <div class="product_name">
                                        <div><a href="product.html">{{$row->product_name}}</a></div>

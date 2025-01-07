@@ -39,7 +39,7 @@
 
          		        <tr>
          	                <th> Total : </th>
-         	                <th> {{ $order->total }} Tk </th>
+         	                <th> {{ $order->total }} $ </th>
          		        </tr>
 
          		        <tr>

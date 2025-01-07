@@ -35,9 +35,9 @@ $mid = DB::table('products')->where('status',1)->where('mid_slider',1)->orderBy(
                            <div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="{{ asset( $row->image_one )}}" alt="" style="height: 120px; width: 100px;"></div>
                            <div class="product_content">
                               @if($row->discount_price == NULL)
-                              <div class="product_price discount">TK{{ $row->selling_price }}<span> </div>
+                              <div class="product_price discount">${{ $row->selling_price }}<span> </div>
                               @else
-                              <div class="product_price discount">TK{{ $row->discount_price }}<span>TK{{ $row->selling_price }}</span></div>
+                              <div class="product_price discount">${{ $row->discount_price }}<span>${{ $row->selling_price }}</span></div>
                               @endif
                               <div class="product_name">
                                  <div><a href="{{ url('product/details/'.$row->id.'/'.$row->product_name) }}">{{ $row->product_name }}</a></div>
@@ -99,9 +99,9 @@ $mid = DB::table('products')->where('status',1)->where('mid_slider',1)->orderBy(
                            <div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="{{ asset( $row->image_one )}}" alt="" style="height: 120px; width: 100px;"></div>
                            <div class="product_content">
                               @if($row->discount_price == NULL)
-                              <div class="product_price discount">TK{{ $row->selling_price }}<span> </div>
+                              <div class="product_price discount">${{ $row->selling_price }}<span> </div>
                               @else
-                              <div class="product_price discount">TK{{ $row->discount_price }}<span>TK{{ $row->selling_price }}</span></div>
+                              <div class="product_price discount">${{ $row->discount_price }}<span>${{ $row->selling_price }}</span></div>
                               @endif
                               <div class="product_name">
                                  <div><a href="{{ url('product/details/'.$row->id.'/'.$row->product_name) }}">{{ $row->product_name }}</a></div>
@@ -164,9 +164,9 @@ $mid = DB::table('products')->where('status',1)->where('mid_slider',1)->orderBy(
                            <div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="{{ asset( $row->image_one )}}" alt="" style="height: 120px; width: 100px;"></div>
                            <div class="product_content">
                               @if($row->discount_price == NULL)
-                              <div class="product_price discount">TK{{ $row->selling_price }}<span> </div>
+                              <div class="product_price discount">${{ $row->selling_price }}<span> </div>
                               @else
-                              <div class="product_price discount">TK{{ $row->discount_price }}<span>TK{{ $row->selling_price }}</span></div>
+                              <div class="product_price discount">${{ $row->discount_price }}<span>${{ $row->selling_price }}</span></div>
                               @endif
                               <div class="product_name">
                                  <div><a href="{{ url('product/details/'.$row->id.'/'.$row->product_name) }}">{{ $row->product_name }}</a></div>
@@ -229,9 +229,9 @@ $mid = DB::table('products')->where('status',1)->where('mid_slider',1)->orderBy(
                            <div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="{{ asset( $row->image_one )}}" alt="" style="height: 120px; width: 100px;"></div>
                            <div class="product_content">
                               @if($row->discount_price == NULL)
-                              <div class="product_price discount">TK{{ $row->selling_price }}<span> </div>
+                              <div class="product_price discount">${{ $row->selling_price }}<span> </div>
                               @else
-                              <div class="product_price discount">TK{{ $row->discount_price }}<span>TK{{ $row->selling_price }}</span></div>
+                              <div class="product_price discount">${{ $row->discount_price }}<span>${{ $row->selling_price }}</span></div>
                               @endif
                               <div class="product_name">
                                  <div><a href="{{ url('product/details/'.$row->id.'/'.$row->product_name) }}">{{ $row->product_name }}</a></div>
@@ -296,9 +296,9 @@ $mid = DB::table('products')->where('status',1)->where('mid_slider',1)->orderBy(
                            <div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="{{ asset( $row->image_one )}}" alt="" style="height: 120px; width: 100px;"></div>
                            <div class="product_content">
                               @if($row->discount_price == NULL)
-                              <div class="product_price discount">TK{{ $row->selling_price }}<span> </div>
+                              <div class="product_price discount">${{ $row->selling_price }}<span> </div>
                               @else
-                              <div class="product_price discount">TK{{ $row->discount_price }}<span>TK{{ $row->selling_price }}</span></div>
+                              <div class="product_price discount">${{ $row->discount_price }}<span>${{ $row->selling_price }}</span></div>
                               @endif
                               <div class="product_name">
                                  <div><a href="{{ url('product/details/'.$row->id.'/'.$row->product_name) }}">{{ $row->product_name }}</a></div>
@@ -361,9 +361,9 @@ $mid = DB::table('products')->where('status',1)->where('mid_slider',1)->orderBy(
                            <div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="{{ asset( $row->image_one )}}" alt="" style="height: 120px; width: 100px;"></div>
                            <div class="product_content">
                               @if($row->discount_price == NULL)
-                              <div class="product_price discount">TK{{ $row->selling_price }}<span> </div>
+                              <div class="product_price discount">${{ $row->selling_price }}<span> </div>
                               @else
-                              <div class="product_price discount">TK{{ $row->discount_price }}<span>TK{{ $row->selling_price }}</span></div>
+                              <div class="product_price discount">${{ $row->discount_price }}<span>${{ $row->selling_price }}</span></div>
                               @endif
                               <div class="product_name">
                                  <div><a href="{{ url('product/details/'.$row->id.'/'.$row->product_name) }}">{{ $row->product_name }}</a></div>

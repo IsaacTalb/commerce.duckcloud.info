@@ -71,11 +71,11 @@ $vat = $setting->vat;
 
                 <div class="cart_item_price cart_info_col">
                     <div class="cart_item_title"><b>Price</b></div>
-                    <div class="cart_item_text">{{ $row->price }}Tk</div>
+                    <div class="cart_item_text">{{ $row->price }}$</div>
                 </div>
                 <div class="cart_item_total cart_info_col">
                     <div class="cart_item_title"><b>Total</b></div>
-                    <div class="cart_item_text">{{ $row->price*$row->qty }}Tk</div>
+                    <div class="cart_item_text">{{ $row->price*$row->qty }}$</div>
                 </div>
 
 
@@ -89,23 +89,23 @@ $vat = $setting->vat;
                         <ul class="list-group col-lg-8" style="float: right;">
             @if(Session::has('coupon'))
             <li class="list-group-item">Subtotal : <span style="float: right;">
-            {{ Session::get('coupon')['balance'] }}Tk</span> </li>
+            {{ Session::get('coupon')['balance'] }}$</span> </li>
              <li class="list-group-item">Coupon : ({{ Session::get('coupon')['name'] }} )
               <a href="{{ route('coupon.remove') }}" class="btn btn-danger btn-sm">X</a>
-           <span style="float: right;">{{ Session::get('coupon')['discount'] }}Tk</span> </li>
+           <span style="float: right;">{{ Session::get('coupon')['discount'] }}$</span> </li>
             @else
             <li class="list-group-item">Subtotal : <span style="float: right;">
-            {{  Cart::Subtotal() }}Tk</span> </li>
+            {{  Cart::Subtotal() }}$</span> </li>
             @endif
 
 
 
-            <li class="list-group-item">Shiping Charge : <span style="float: right;">{{ $charge  }}Tk </span> </li>
-            <li class="list-group-item">Vat : <span style="float: right;">{{ $vat }}Tk </span> </li>
+            <li class="list-group-item">Shiping Charge : <span style="float: right;">{{ $charge  }}$ </span> </li>
+            <li class="list-group-item">Vat : <span style="float: right;">{{ $vat }}$ </span> </li>
             @if(Session::has('coupon'))
-          						<li class="list-group-item">Total : <span style="float: right;">{{(int) Session::get('coupon')['balance'] +(int) $charge + $vat }}Tk </span> </li>
+          						<li class="list-group-item">Total : <span style="float: right;">{{(int) Session::get('coupon')['balance'] +(int) $charge + $vat }}$ </span> </li>
           						@else
-      							<li class="list-group-item">Total : <span style="float: right;">{{ (int)Cart::Subtotal() +(int) $charge + $vat }}Tk </span> </li>
+      							<li class="list-group-item">Total : <span style="float: right;">{{ (int)Cart::Subtotal() +(int) $charge + $vat }}$ </span> </li>
           						@endif
 
           </ul>
